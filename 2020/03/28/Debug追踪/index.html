@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>java-构造方法 | Hexo</title>
+  <title>Debug追踪 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="构造方法介绍构造方法是专门用来创建对象的方法，当我们用关键字new来创建对象时，其实就是在调用构造方法。">
+  <meta name="description" content="Debug追踪使用Debug可以让代码逐行执行，查看代码执行过程，调试程序中出现的bug">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java-构造方法">
-<meta property="og:url" content="http://yoursite.com/2020/03/28/java-%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="Debug追踪">
+<meta property="og:url" content="http://yoursite.com/2020/03/28/Debug%E8%BF%BD%E8%B8%AA/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="构造方法介绍构造方法是专门用来创建对象的方法，当我们用关键字new来创建对象时，其实就是在调用构造方法。">
+<meta property="og:description" content="Debug追踪使用Debug可以让代码逐行执行，查看代码执行过程，调试程序中出现的bug">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-28T01:31:58.000Z">
-<meta property="article:modified_time" content="2020-03-28T01:48:14.275Z">
+<meta property="article:published_time" content="2020-03-28T12:14:04.000Z">
+<meta property="article:modified_time" content="2020-03-28T12:14:44.147Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -146,75 +146,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-java-构造方法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Debug追踪" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      java-构造方法
+      Debug追踪
     </h1>
   
 
         
-        <a href="/2020/03/28/java-%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-03-28T01:31:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-28</time>
+        <a href="/2020/03/28/Debug%E8%BF%BD%E8%B8%AA/" class="archive-article-date">
+  	<time datetime="2020-03-28T12:14:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>构造方法是专门用来创建对象的方法，当我们用关键字new来创建对象时，其实就是在调用构造方法。</p>
+        <h1 id="Debug追踪"><a href="#Debug追踪" class="headerlink" title="Debug追踪"></a>Debug追踪</h1><p>使用Debug可以让代码逐行执行，查看代码执行过程，调试程序中出现的bug</p>
 <a id="more"></a>
 
-
-
-<h2 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h2><p>public 类名称（参数类型 参数名称）{</p>
-<p>}</p>
-<h2 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h2><p>1.构造方法的名称必须和所在的类名称完全一样，就连大小写完全一样</p>
-<p>2.构造方法不要写返回值类型</p>
-<p>3.构造方法不能return一个具体的返回值</p>
-<p>4.如果没有编写任何构造方法，那么编译器将会默认赠送一个构造方法，没有参数、方法体，什么事情都不做（比如白给一个public Student( ){ }）</p>
-<p>5.一旦编写了至少要给构造方法，那么编译器不再赠送。</p>
-<p>6.构造方法可以进行重载，参数列表不同</p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="使用一"><a href="#使用一" class="headerlink" title="使用一"></a>使用一</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"运行构造方法"</span>)；</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这种特殊格式的构造方法用途是用来创建对象</p>
-<p>比如说我们来使用这个对象</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoStudent</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Student stu = <span class="keyword">new</span> Student();<span class="comment">//这个类名称就是构造方法名</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>构造方法的利用</p>
-<p>当通过new创建对象的时候，就是在使用构造方法。</p>
-<h3 id="使用二"><a href="#使用二" class="headerlink" title="使用二"></a>使用二</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name,<span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>当我们自定义一个构造方法时，系统将不再赠送构造方法</p>
-<p>因此要我们手动加入默认构造方法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"执行构造方法"</span>)； <span class="comment">//无参构造</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name,<span class="keyword">int</span> age)</span></span>&#123; <span class="comment">//有参构造</span></span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>构造方法的使用</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Demo2Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Student stu1 = <span class="keyword">new</span> Student();<span class="comment">//无参使用</span></span><br><span class="line">        Student sut2 = <span class="keyword">new</span> Student(<span class="string">"张三"</span>，<span class="number">20</span>);<span class="comment">//有参使用</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>那么怎么拿出来呢</p>
-<p>那就要加入get和set方法了</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//成员变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"执行构造方法"</span>)； <span class="comment">//无参构造</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name,<span class="keyword">int</span> age)</span></span>&#123; <span class="comment">//全参构造</span></span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//Getter &amp; Setter</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getName</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function">pubic <span class="keyword">void</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>对全参构造的使用</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Demo2Student</span><span class="params">()</span></span>&#123;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Student stu1 = <span class="keyword">new</span> Student();<span class="comment">//无参使用</span></span><br><span class="line">        Student sut2 = <span class="keyword">new</span> Student(<span class="string">"张三"</span>，<span class="number">20</span>);<span class="comment">//有参使用</span></span><br><span class="line">        System.out.println(<span class="string">"姓名"</span>+stu2.getName()+<span class="string">"年龄"</span>+stu2.getAge());</span><br><span class="line">        <span class="comment">//当角色年龄增长的时候，任然要使用setXX方法</span></span><br><span class="line">        stu2.setAge(<span class="number">21</span>);</span><br><span class="line">        System.out.println(<span class="string">"姓名"</span>+stu2.getName()+<span class="string">"年龄"</span>+stu2.getAge());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>这种重载形式的全参构造方法，只是在创建对象的时候方便我们把现成的数据通过参数的形式设计进来，当修改数据的时候，还是要用set方法。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>一个类要有无参构造方法，全参构造方法和getter&amp;setter方法。</p>
+<p>使用方式：在行号的右边，鼠标左键单击，添加断点（每个方法的第一行，哪里有bug添加到哪里）</p>
+<p>执行程序：</p>
+<p>​    f8：逐行执行程序</p>
+<p>​    f7：进入到方法中</p>
+<p>​    shift+f8：跳出方法</p>
+<p>​    f9：跳到下一个断点，如果没有下一个断点，那么就结束程序</p>
+<p>​    ctrl+f2：退出Debug模式，停止程序</p>
+<p>​    Console：切换到控制台</p>
 
       
 
@@ -294,7 +256,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/28/java-%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/28/Debug%E8%BF%BD%E8%B8%AA/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -308,18 +270,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/28/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          面向对象和面向过程
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/23/%E5%89%91%E6%8C%87offerer-%E6%9C%80%E5%B0%8F%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">剑指offerer_最小旋转数组</div>
+    <a href="/2020/03/28/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">类和对象</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -346,7 +299,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#构造方法"><span class="toc-number">1.</span> <span class="toc-text">构造方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍"><span class="toc-number">1.1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#格式："><span class="toc-number">1.2.</span> <span class="toc-text">格式：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注意事项："><span class="toc-number">1.3.</span> <span class="toc-text">注意事项：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用"><span class="toc-number">1.4.</span> <span class="toc-text">使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用一"><span class="toc-number">1.4.1.</span> <span class="toc-text">使用一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用二"><span class="toc-number">1.4.2.</span> <span class="toc-text">使用二</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">1.5.</span> <span class="toc-text">总结</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Debug追踪"><span class="toc-number">1.</span> <span class="toc-text">Debug追踪</span></a></li></ol>
                     </div>
                 </span>
             </div>
