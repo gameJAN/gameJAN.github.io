@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Debug追踪 | Hexo</title>
+  <title>java-MAP集合 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Debug追踪使用Debug可以让代码逐行执行，查看代码执行过程，调试程序中出现的bug">
+  <meta name="description" content="MAP集合介绍将键映射到值的对象。一个映射不能包含重复的键；每个键最多只能映射到一个值。  通常称之为双列集合。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Debug追踪">
-<meta property="og:url" content="http://yoursite.com/2020/03/28/Debug%E8%BF%BD%E8%B8%AA/index.html">
+<meta property="og:title" content="java-MAP集合">
+<meta property="og:url" content="http://yoursite.com/2020/03/29/java-MAP%E9%9B%86%E5%90%88/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Debug追踪使用Debug可以让代码逐行执行，查看代码执行过程，调试程序中出现的bug">
+<meta property="og:description" content="MAP集合介绍将键映射到值的对象。一个映射不能包含重复的键；每个键最多只能映射到一个值。  通常称之为双列集合。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-28T12:14:04.000Z">
-<meta property="article:modified_time" content="2020-03-28T12:14:44.147Z">
+<meta property="og:image" content="c:%5CUsers%5CJan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200329115012853.png">
+<meta property="og:image" content="c:%5CUsers%5CJan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200329140605030.png">
+<meta property="article:published_time" content="2020-03-29T06:47:10.000Z">
+<meta property="article:modified_time" content="2020-03-29T06:47:56.349Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5CJan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200329115012853.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -146,37 +149,83 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Debug追踪" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-java-MAP集合" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Debug追踪
+      java-MAP集合
     </h1>
   
 
         
-        <a href="/2020/03/28/Debug%E8%BF%BD%E8%B8%AA/" class="archive-article-date">
-  	<time datetime="2020-03-28T12:14:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-28</time>
+        <a href="/2020/03/29/java-MAP%E9%9B%86%E5%90%88/" class="archive-article-date">
+  	<time datetime="2020-03-29T06:47:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Debug追踪"><a href="#Debug追踪" class="headerlink" title="Debug追踪"></a>Debug追踪</h1><p>使用Debug可以让代码逐行执行，查看代码执行过程，调试程序中出现的bug</p>
+        <h1 id="MAP集合"><a href="#MAP集合" class="headerlink" title="MAP集合"></a>MAP集合</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>将键映射到值的对象。一个映射不能包含重复的键；每个键最多只能映射到一个值。 </p>
+<p>通常称之为双列集合。</p>
 <a id="more"></a>
 
-<p>使用方式：在行号的右边，鼠标左键单击，添加断点（每个方法的第一行，哪里有bug添加到哪里）</p>
-<p>执行程序：</p>
-<p>​    f8：逐行执行程序</p>
-<p>​    f7：进入到方法中</p>
-<p>​    shift+f8：跳出方法</p>
-<p>​    f9：跳到下一个断点，如果没有下一个断点，那么就结束程序</p>
-<p>​    ctrl+f2：退出Debug模式，停止程序</p>
-<p>​    Console：切换到控制台</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>​    1.Map集合是一个双列集合，一个元素包含两个值（一个key，一个value）</p>
+<p>​    2.Map集合中的元素，key和value的数据类型可以相同，也可以不同</p>
+<p>​    3.Map集合中的元素，key是不允许重复的，value是可以重复的</p>
+<p>​    4.Map结合中的元素，key和value是一一对应的</p>
+<h2 id="常用实现类"><a href="#常用实现类" class="headerlink" title="常用实现类"></a>常用实现类</h2><h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><p>基于哈希表的 <code>Map</code> 接口的实现。此实现提供所有可选的映射操作，并允许使用 <code>null</code> 值和 <code>null</code>  键。（除了非同步和允许使用 null 之外，<code>HashMap</code> 类与 <code>Hashtable</code>  大致相同。）此类不保证映射的顺序，特别是它不保证该顺序恒久不变。 </p>
+<p>此实现是多线程的</p>
+<h4 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h4><p>1.底层是哈希表：查询速度特别快</p>
+<p>​    JDK1.8之前：数组+单向链表</p>
+<p>​    JDK1.8之后：数组+单向链表/红黑树（链表长度超过8）：提高查询速度</p>
+<p>2.HashMap集合是一个无序的集合，存储元素和取出元素的顺序可能不一样</p>
+<h4 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h4><h5 id="特点-2"><a href="#特点-2" class="headerlink" title="特点"></a>特点</h5><p>1.底层是哈希表+链表（保证迭代的顺序）</p>
+<p>2.LinkedHashMap集合是一个有序的集合，存储元素和取出元素的顺序是一致的</p>
+<h2 id="MAP接口常用方法"><a href="#MAP接口常用方法" class="headerlink" title="MAP接口常用方法"></a>MAP接口常用方法</h2><p>put（K key，V value）</p>
+<ul>
+<li>返回值是value</li>
+<li>存储键值对的时候，key不重复，返回值v是null</li>
+<li>存储键值对的时候，会使用新的value替换map中重复的value，返回替换的value值</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoMap</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        show01();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">show01</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Map&lt;String , String&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        String v1 = map.put(<span class="string">"张三"</span>,<span class="string">"李四"</span>);</span><br><span class="line">        System.out.println(<span class="string">"v1:"</span>+v1);</span><br><span class="line"></span><br><span class="line">        String v2 = map.put(<span class="string">"张三"</span>,<span class="string">"王五"</span>);</span><br><span class="line">        System.out.println(<span class="string">"v2:"</span>+v2);</span><br><span class="line">        </span><br><span class="line">        System.out.println(map);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*输出</span></span><br><span class="line"><span class="comment">v1:null</span></span><br><span class="line"><span class="comment">v2:李四</span></span><br><span class="line"><span class="comment">&#123;张三=王五&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p>get（Object key）</p>
+<ul>
+<li>返回值</li>
+<li>key存在，v返回对应的值</li>
+<li>key不存在，v返回的是null</li>
+</ul>
+<p>remove（Object key）</p>
+<ul>
+<li>返回V</li>
+<li>key存在，v返回被删除的值</li>
+<li>key不存在，v返回null</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoMap</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;<span class="comment">/*</span></span><br><span class="line"><span class="comment">        show01();*/</span></span><br><span class="line">        show02();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">show02</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Map&lt;String , String&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        map.put(<span class="string">"张三"</span>,<span class="string">"李四"</span>);</span><br><span class="line">        System.out.println(map);</span><br><span class="line">        String v1 = map.remove(<span class="string">"张三"</span>);</span><br><span class="line">        System.out.println(map);</span><br><span class="line">        String v2 = map.remove(<span class="string">"李四"</span>);</span><br><span class="line">        System.out.println(v2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 返回值</span></span><br><span class="line"><span class="comment">&#123;张三=李四&#125;</span></span><br><span class="line"><span class="comment">&#123;&#125;</span></span><br><span class="line"><span class="comment">null</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p>containsKey（Object key）</p>
+<ul>
+<li>返回boolean，判断是否含有key</li>
+</ul>
+<p>keySet（）</p>
+<ul>
+<li>返回此映射中包含的键的set值</li>
+</ul>
+<p><img src="C:%5CUsers%5CJan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200329115012853.png" alt="image-20200329115012853"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*map集合的第一种遍历方式</span></span><br><span class="line"><span class="comment">* map集合中的方法keySet()</span></span><br><span class="line"><span class="comment">* 实现步骤：</span></span><br><span class="line"><span class="comment">*   1.使用Map集合中的方法keySet(),把map集合所有的key取出来，存储到一个set集合中</span></span><br><span class="line"><span class="comment">*   2.遍历set集合，获取Map集合中的每一个key</span></span><br><span class="line"><span class="comment">*   3.通过map集合中的方法get(key)</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoKeySet</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Map&lt;String , String&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        map.put(<span class="string">"张三"</span>,<span class="string">"李四"</span>);</span><br><span class="line">        map.put(<span class="string">"李四"</span>,<span class="string">"王五"</span>);</span><br><span class="line">        map.put(<span class="string">"王五"</span>,<span class="string">"赵六"</span>);</span><br><span class="line">        <span class="comment">//1.使用Map集合中的方法keySet(),把map集合所有的key取出来，存储到一个set集合中</span></span><br><span class="line">        Set&lt;String&gt; set = map.keySet();</span><br><span class="line">        <span class="comment">//2.遍历set集合，获取Map集合中的每一个key</span></span><br><span class="line">        Iterator&lt;String&gt; it = set.iterator();</span><br><span class="line">        <span class="keyword">while</span> (it.hasNext())&#123;</span><br><span class="line">            String key = it.next();</span><br><span class="line">            <span class="comment">//3.通过map集合中的方法get(key)</span></span><br><span class="line">            String value = map.get(key);</span><br><span class="line">            System.out.println(key+<span class="string">"="</span>+value);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>entrySet（）</p>
+<ul>
+<li>Map.Entry&lt;K,V&gt;：在Map接口中有一个内部接口Entry</li>
+<li>作用：当Map集合一创建，那么在Map集合中创建一个Entry对象，用来记录键和值。</li>
+<li><img src="C:%5CUsers%5CJan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200329140605030.png" alt="image-20200329140605030"></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> map;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    Map集合遍历的第二种方式：使用Entry对象遍历</span></span><br><span class="line"><span class="comment">    Map集合中的方法：</span></span><br><span class="line"><span class="comment">        Set&lt;Map.Entry&lt;K,V&gt;&gt; entrySet() 返回此映射中包含的映射关系的Set视图。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    实现步骤：</span></span><br><span class="line"><span class="comment">        1.使用Map集合中的方法entrySet(),把Map结合中多个Entry对象取出来，存储到一个Set集合中</span></span><br><span class="line"><span class="comment">        2.遍历Set集合，获取每一个Entry对象</span></span><br><span class="line"><span class="comment">        3.使用Entry对象中的方法getKey()和getValue()获取键和值</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoEntrySet</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        Map&lt;String , String&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        map.put(<span class="string">"张三"</span>,<span class="string">"李四"</span>);</span><br><span class="line">        map.put(<span class="string">"李四"</span>,<span class="string">"王五"</span>);</span><br><span class="line">        map.put(<span class="string">"王五"</span>,<span class="string">"赵六"</span>);</span><br><span class="line">        <span class="comment">//1.使用Map集合中的方法entrySet(),把Map结合中多个Entry对象取出来，存储到一个Set集合中</span></span><br><span class="line">        Set&lt;Map.Entry&lt;String,String&gt;&gt; set =map.entrySet();</span><br><span class="line">        <span class="comment">//2.遍历Set集合，获取每一个Entry对象</span></span><br><span class="line">        Iterator&lt;Map.Entry&lt;String, String&gt;&gt; it = set.iterator();</span><br><span class="line">        <span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">            Map.Entry&lt;String, String&gt; entry= it.next();</span><br><span class="line">            <span class="comment">//3.使用Entry对象中的方法getKey()和getValue()获取键和值</span></span><br><span class="line">            String key =entry.getKey();</span><br><span class="line">            String value = entry.getValue();</span><br><span class="line">            System.out.println(key+<span class="string">"+"</span>+value);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">李四+王五</span></span><br><span class="line"><span class="comment">张三+李四</span></span><br><span class="line"><span class="comment">王五+赵六</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -256,7 +305,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/28/Debug%E8%BF%BD%E8%B8%AA/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/29/java-MAP%E9%9B%86%E5%90%88/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -270,18 +319,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/29/java-MAP%E9%9B%86%E5%90%88/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          java-MAP集合
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/28/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">类和对象</div>
+    <a href="/2020/03/28/Debug%E8%BF%BD%E8%B8%AA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Debug追踪</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -308,7 +348,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Debug追踪"><span class="toc-number">1.</span> <span class="toc-text">Debug追踪</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MAP集合"><span class="toc-number">1.</span> <span class="toc-text">MAP集合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍"><span class="toc-number">1.1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特点"><span class="toc-number">1.2.</span> <span class="toc-text">特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用实现类"><span class="toc-number">1.3.</span> <span class="toc-text">常用实现类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HashMap"><span class="toc-number">1.3.1.</span> <span class="toc-text">HashMap</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#特点-1"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LinkedHashMap"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">LinkedHashMap</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#特点-2"><span class="toc-number">1.3.1.2.1.</span> <span class="toc-text">特点</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MAP接口常用方法"><span class="toc-number">1.4.</span> <span class="toc-text">MAP接口常用方法</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
