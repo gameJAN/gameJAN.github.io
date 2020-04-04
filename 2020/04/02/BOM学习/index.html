@@ -17,7 +17,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="c:%5CUsers%5CJan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200402141124390.png">
 <meta property="article:published_time" content="2020-04-02T07:29:16.000Z">
-<meta property="article:modified_time" content="2020-04-02T07:31:49.326Z">
+<meta property="article:modified_time" content="2020-04-04T01:39:22.116Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="c:%5CUsers%5CJan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200402141124390.png">
@@ -193,22 +193,25 @@
 <li>prompt() 显示可提示用户输入的对话框（不常用）</li>
 </ul>
 <h4 id="打开一个新窗口"><a href="#打开一个新窗口" class="headerlink" title="打开一个新窗口"></a>打开一个新窗口</h4><ul>
-<li><p>open方法</p>
+<li>open方法</li>
+</ul>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"openBtn"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> test =<span class="built_in">document</span>.getElementById(<span class="string">"openBtn"</span>);</span></span><br><span class="line"><span class="actionscript">        test.onclick = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">            open(<span class="string">"http://www.baidu.com"</span>);</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="与定时器有关的方法"><a href="#与定时器有关的方法" class="headerlink" title="与定时器有关的方法"></a>与定时器有关的方法</h4><ul>
+<li>setTimeout() 在指定的毫秒后调用函数或计算表达式<ul>
+<li>参数：<ul>
+<li>js代码或者方法对象</li>
+<li>毫秒值</li>
+</ul>
 </li>
-<li><pre><code class="html"><span class="tag">&lt;<span class="name">body</span>&gt;</span>
-
-    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"openBtn"</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">script</span>&gt;</span>
-<span class="javascript">        <span class="keyword">var</span> test =<span class="built_in">document</span>.getElementById(<span class="string">"openBtn"</span>);</span>
-<span class="actionscript">        test.onclick = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>{</span>
-<span class="actionscript">            open(<span class="string">"http://www.baidu.com"</span>);</span>
-        }
-
-</code></pre>
+<li>返回值<ul>
+<li>唯一标识，用于取消定时器</li>
+</ul>
 </li>
 </ul>
-<pre><code>&lt;/script&gt;</code></pre>  </body>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 与定时器有关的方法</span><br><span class="line"></span><br><span class="line">* setTimeout() 在指定的毫秒后调用函数或计算表达式</span><br><span class="line">  * 参数：</span><br><span class="line">    * js代码或者方法对象</span><br><span class="line">    * 毫秒值</span><br><span class="line">  * 返回值</span><br><span class="line">    * 唯一标识，用于取消定时器</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;html</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;input type&#x3D;&quot;button&quot; id&#x3D;&quot;openBtn&quot; &gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        var test &#x3D;document.getElementById(&quot;openBtn&quot;);</span><br><span class="line">        test.onclick &#x3D; function () &#123;</span><br><span class="line">            setTimeout(&quot;alert(&#39;boom&#39;);&quot;,3000);</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"openBtn"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> test =<span class="built_in">document</span>.getElementById(<span class="string">"openBtn"</span>);</span></span><br><span class="line"><span class="actionscript">        test.onclick = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">            setTimeout(<span class="string">"alert('boom');"</span>,<span class="number">3000</span>);</span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>clearTimeout() 取消有setTimeout方法设置的timeout。</li>
@@ -322,6 +325,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/04/04/DOM%E4%BA%8C%E9%98%B6%E5%AD%A6%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          DOM二阶学习
+        
+      </div>
+    </a>
+  
   
     <a href="/2020/04/02/DOM%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">DOM简单学习</div>
@@ -351,7 +363,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BOM学习"><span class="toc-number">1.</span> <span class="toc-text">BOM学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#window对象"><span class="toc-number">1.1.</span> <span class="toc-text">window对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法"><span class="toc-number">1.1.1.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#与弹出框有关的方法"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">与弹出框有关的方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#打开一个新窗口"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">打开一个新窗口</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">1.1.2.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特点"><span class="toc-number">1.1.3.</span> <span class="toc-text">特点</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BOM学习"><span class="toc-number">1.</span> <span class="toc-text">BOM学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#window对象"><span class="toc-number">1.1.</span> <span class="toc-text">window对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法"><span class="toc-number">1.1.1.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#与弹出框有关的方法"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">与弹出框有关的方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#打开一个新窗口"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">打开一个新窗口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#与定时器有关的方法"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">与定时器有关的方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">1.1.2.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特点"><span class="toc-number">1.1.3.</span> <span class="toc-text">特点</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
